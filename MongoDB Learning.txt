@@ -1,0 +1,22 @@
+The Ultimate MongoDB Aggregation Guide: Make Your Queries Soar in One Video
+
+Core Aggregation Concepts
+🔍MongoDB aggregation is a pipeline operation that transforms data through multiple stages, grouping documents based on specified expressions.
+🛠️The aggregate method takes a pipeline argument (array of operations) and an options argument, including explain and query allow disk use for intermediate storage.
+Key Operators
+📊The $group operator creates new documents for each unique value of a specified field, enabling grouping of data like teachers by age.
+🔎$match filters documents based on conditions, allowing selection of specific subsets like male teachers for further processing.
+🧮$sum increments values by one for each document in a group, useful for counting items like teachers in age groups.
+Advanced Techniques
+🔀$unwind unwraps nested arrays, creating separate documents for each element, facilitating operations on array fields like hobbies.
+📏$size determines array length, useful for counting items like total hobbies, with $ifNull handling null cases by returning empty arrays.
+📈$avg calculates averages of specified fields, applicable to scenarios like finding mean age or scores across collections.
+Complex Queries
+🔗Chaining multiple operators in a pipeline enables complex data processing, such as grouping unwound hobbies to count students per hobby.
+🎯Combining $match with aggregation operators allows targeted analysis, like calculating average scores for students over 20 years old.
+Summary for: https://youtu.be/MWmMvudBgFU by Noiz — https://noiz.io/tools/youtube-summary
+
+
+db.collection.aggregate(pipeling, options);
+
+pipeline = array of operations
