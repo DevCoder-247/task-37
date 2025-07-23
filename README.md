@@ -1,4 +1,5 @@
 # 🛠️ Task 37 - Full Stack Project
+## Please visit Backend first and wait because Render free tier puts the free tier backend to sleep and taaakes 30sec to invoke
 
 ## 🌐 Live Links
 
